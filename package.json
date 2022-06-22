@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "nest js and next js",
   "main": "index.js",
+  "engines": {
+    "yarn": "1.x"
+  },
   "scripts": {
     "dev:front": "cd frontend && npm run dev",
     "dev:back": "cd backend && npm run start:dev",
@@ -12,7 +15,9 @@
     "start:back": "cd backend && npm start",
     "install:front": "cd frontend && npm install",
     "install:back": "cd backend && npm install",
-    "install:both": "npm run install:back && npm run install:front"
+    "install:both": "npm run install:back && npm run install:front",
+    "start": "concurrently \"npm run dev:front\" \"npm run dev:back\"",
+    "heroku-postbuild": "NPM_PRODUCTION=false && npm run install:both"
   },
   "repository": {
     "type": "git",
@@ -32,5 +37,8 @@
   "bugs": {
     "url": "https://github.com/Imran-Sarkar-Sabbir/nest-and-next-js/issues"
   },
-  "homepage": "https://github.com/Imran-Sarkar-Sabbir/nest-and-next-js#readme"
+  "homepage": "https://github.com/Imran-Sarkar-Sabbir/nest-and-next-js#readme",
+  "dependencies": {
+    "concurrently": "^7.2.2"
+  }
 }
