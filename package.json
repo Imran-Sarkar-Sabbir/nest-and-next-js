@@ -19,7 +19,7 @@
     "install:both": "npm run install:back && npm run install:front",
     "dev": "concurrently \"npm run dev:front\" \"npm run dev:back\"",
     "start": "concurrently \"npm run start:front\" \"npm run start:back\"",
-    "heroku-postbuild": "NPM_PRODUCTION=false && npm run install:both && npm run build:both"
+    "heroku-postbuild": "npm install && npm run install:both && npm run build:both"
   },
   "repository": {
     "type": "git",
