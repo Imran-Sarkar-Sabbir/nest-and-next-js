@@ -4,7 +4,8 @@
   "description": "nest js and next js",
   "main": "index.js",
   "engines": {
-    "yarn": "1.x"
+    "node": "16.x",
+    "npm": "8.x"
   },
   "scripts": {
     "dev:front": "cd frontend && npm run dev",
