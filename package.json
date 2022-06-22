@@ -1,0 +1,36 @@
+{
+  "name": "nest-and-next",
+  "version": "1.0.0",
+  "description": "nest js and next js",
+  "main": "index.js",
+  "scripts": {
+    "dev:front": "cd frontend && npm run dev",
+    "dev:back": "cd backend && npm run start:dev",
+    "build:front": "cd frontend && npm run build",
+    "build:back": "cd backend && npm run build",
+    "start:front": "cd frontend && npm  start",
+    "start:back": "cd backend && npm start",
+    "install:front": "cd frontend && npm install",
+    "install:back": "cd backend && npm install",
+    "install:both": "npm run install:back && npm run install:front"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Imran-Sarkar-Sabbir/nest-and-next-js.git"
+  },
+  "keywords": [
+    "nest",
+    "js",
+    "next",
+    "js",
+    "socket",
+    "io",
+    "communication"
+  ],
+  "author": "imran sarkar (sabbir)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Imran-Sarkar-Sabbir/nest-and-next-js/issues"
+  },
+  "homepage": "https://github.com/Imran-Sarkar-Sabbir/nest-and-next-js#readme"
+}
