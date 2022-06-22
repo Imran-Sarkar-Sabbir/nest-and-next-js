@@ -11,14 +11,15 @@
     "dev:back": "cd backend && npm run start:dev",
     "build:front": "cd frontend && npm run build",
     "build:back": "cd backend && npm run build",
-    "build:both": "npm run build:fron && npm run build:back",
+    "build:both": "npm run build:front && npm run build:back",
     "start:front": "cd frontend && npm  start",
     "start:back": "cd backend && npm start",
     "install:front": "cd frontend && npm install",
     "install:back": "cd backend && npm install",
     "install:both": "npm run install:back && npm run install:front",
-    "start": "concurrently \"npm run dev:front\" \"npm run dev:back\"",
-    "heroku-postbuild": "NPM_PRODUCTION=false && npm run install:both && "
+    "dev": "concurrently \"npm run dev:front\" \"npm run dev:back\"",
+    "start": "concurrently \"npm run start:front\" \"npm run start:back\"",
+    "heroku-postbuild": "NPM_PRODUCTION=false && npm run install:both && npm run build:both"
   },
   "repository": {
     "type": "git",
